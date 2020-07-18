@@ -7,6 +7,7 @@
 }
 
 body{
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,13 +29,24 @@ div{
 }
 
 .links{
-    margin-right: 40px;
+   
+    width: 50%;
+    margin-right: 0px;
+}
+
+.alinks{
+    width: 100%;
 }
 
 a{
     padding: 10px;
     text-decoration: none;
     color: black;
+}
+
+.hamburger{
+    display: none;
+    
 }
 
 .landing-body{
@@ -155,8 +167,6 @@ height: 430px
     width: 70%;
 }
 
-.three{}
-
 .sec3{
     width: 85%;
 }
@@ -167,20 +177,85 @@ height: 430px
 }
 
 .card2{
+    display: flex;
     background: #00AEFF;
     width: 520px;
-    height: 300px;
+    height: 200px;
 }
+
+.card2b{
+    flex-direction: row-reverse;
+    background: #00AEFF;
+    width: 520px;
+    height: 200px;
+}
+
+.main-card{
+    position: relative;
+
+}
+
+.main-card2{
+    position: relative;
+
+}
+
+.card-img{
+    flex-basis: 50%;
+}
+
+.rule{
+    border-left: 2px solid white;
+}
+
+.c-text{
+    width: 40%;
+    color: white;
+    text-align: right;
+}
+
+.c-text2{
+    width: 40%;
+    color: white;
+    text-align: left;
+}
+
 
 .card2-text{
-    font-size: 31px;
+    font-size: 15px;
 }
 
-.base-text{
-    width: 85%;
-    font-size: 25px;
-    color: #00AEFF;
+.round{
+    box-shadow:  4px 6px 15px rgba(0, 0, 0, 0.15);;
+    position: absolute;
+    bottom: 140px;
+    left: -45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00AEFF;
 }
+
+.round2{
+    box-shadow:  4px 6px 15px rgba(0, 0, 0, 0.15);;
+    position: absolute;
+    bottom: 140px;
+    left: 455px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00AEFF;
+}
+
+#hide-button{
+        display: none;
+        width: 150px;
+        height: 50px;
+        background-color:  #00AEFF;
+        border: none;
+        color: white;
+    }
+
 
 .sec4{
     width: 85%;
@@ -191,12 +266,24 @@ height: 430px
     color: #084482;
 }
 
+.sec4-text{
+    color: #084482;
+    margin-top: 50px;
+    text-align: center;
+    width: 60%;
+}
+
 .sponsors{
     flex-wrap: wrap;
 }
 
-.sponsor-img{
-    margin: 60px;
+.btn2{
+    margin-top: 50px;
+    width: 100px;
+    height: 45px;
+    background: #00AEFF;
+    border: none;
+    color: white;
 }
 
 .curve{
@@ -276,8 +363,36 @@ footer{
 @media screen and (max-width: 570px){
 
     .nav-cont{
-        height: 150px;
+        height: 120px;
     }
+
+    .nav{
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .logo{
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 100%;
+        height: 700px;
+        justify-content: space-between;
+    }
+
+    .hng-logo{
+        width: 35%;
+        height: 50px;
+    }
+
+    .hamburger{
+        display: block;
+        margin-right: 60px;
+    }
+
+    a{
+        /* display: none; */
+    }
+
 
     .l-cont{
         margin-left: 90px;
@@ -289,6 +404,7 @@ footer{
     }
     
     .l-text{
+        width: 100%;
         font-size: 19px;
     }
 
@@ -296,9 +412,59 @@ footer{
         width: 100%;
     }
 
+    .landing-body{
+        margin-left: -30px;
+        width: 95%;
+    }
+
+    .landing-image{
+        margin-top: 40px;
+    }
+
     .links{
+        width: 100%;
+        height: 300px;
+    }
+
+    .menu-line{
+        margin: 8px;
+        width: 40px;
+        height: 3px;
+        background-color: #084482;
+    }
+
+    #hide-link{
         display: none;
     }
+    
+    .alinks{
+        display: none;
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        margin-top: 5%;
+        width: 100%;
+        background-color: #E4EDF2;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        z-index: 1;
+    }
+    
+    a{
+        display: flex;
+        justify-content: center;
+        color: #084482; 
+        /* border: 1px solid white; */
+        padding: 30px;
+        cursor: pointer;
+         margin-left: 20px;
+        font-size: 13px;
+    }
+
+    a:hover{
+        background-color: whitesmoke;
+    }
+    
 
     .section1{
         flex-direction: column;
@@ -361,6 +527,15 @@ footer{
 
     .card-text{
         font-size: 14px;
+    }
+
+    #card2b{
+        display: none;
+    }
+
+    #hide-button{
+        display: block;
+       
     }
 
     .sec4-title{
