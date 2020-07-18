@@ -1,7 +1,7 @@
 
 
 function show(){
-  let x = document.getElementsById('hide-link')
+  let x = document.getElementById('hide-link')
    if(x.style.display==='none' ){
        x.style.display=('block');
        

@@ -435,6 +435,7 @@ footer{
 
     #hide-link{
         display: none;
+        z-index: 1;
     }
     
     .alinks{
